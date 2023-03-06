@@ -8,7 +8,28 @@ h2,
 p, 
 li, 
 .card a {
-    color: white;
+    color: #B9F9FF;
+}
+                 /* NAV */
+#logo {
+    margin-left: 5px;
+    width: 70px;
+}
+nav {
+    /* logo-color B9F9FF */
+    z-index: 2;
+    padding: 5px;
+    background-color: #325b6b;
+    top: 0;
+    position: sticky;
+}
+ul {
+    margin-bottom: 2px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: flex-end;
 }
 .title-section {
     text-align: center;
@@ -20,7 +41,14 @@ li,
     display: block;
     margin: 20px auto;
 }
-
+.about-description {
+    max-width: 500px;
+    margin: 5px auto;
+    border-radius: 10px;
+    border: 2px solid rgb(178, 178, 178);
+    padding: 25px;
+    background-color: rgba(59, 59, 59, 0.89);
+}
 
 
              /* WORKS SECTION */
