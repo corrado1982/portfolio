@@ -1,7 +1,10 @@
 body {
     
-    background-color: rgba(58, 84, 75, 0.789);
+    background-color: rgb(28 51 67);
     margin: 0;
+}
+h1, h2, p {
+    color: white;
 }
 .title-section {
     text-align: center;
@@ -21,10 +24,10 @@ body {
 .card h2 {
 
     border-radius: 10px;
-    border: 2px solid rgb(0, 255, 255);
+    border: 2px solid rgb(178, 178, 178);
 
     padding: 25px;
-    background-color: rgba(107, 107, 105, 0.627);
+    background-color: rgba(59, 59, 59, 0.89);
 
     z-index: 1;
     position: absolute;
@@ -46,17 +49,17 @@ body {
     display: flex;
     flex-direction: column;
     /* margin: 20px auto; */
-    margin: 20px
+    margin: 150px
 
 }
 .p-and-github {
     border-radius: 10px;
-    border: 2px solid rgb(0, 255, 255);
+    border: 2px solid rgb(178, 178, 178);
 
-    margin-left: 450px;
-    margin-top: 160px;
+    margin-left: -30px;
+    margin-top: 280px;
     max-width: 330px;
-    background-color: rgba(107, 107, 105, 0.627);
+    background-color: rgba(59, 59, 59, 0.89);
     position: absolute;
     z-index: 1;
     padding: 25px;
