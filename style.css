@@ -17,6 +17,8 @@ li,
 }
 nav {
     /* logo-color B9F9FF */
+    display: flex;
+    justify-content: space-between;
     z-index: 2;
     padding: 5px;
     background-color: #325b6b;
@@ -33,6 +35,16 @@ ul {
 }
 .title-section {
     text-align: center;
+}
+                /* INTRO */
+.intro {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+h1 {
+    font-size: 4em;
 }
              /* ABOUT SECTION */
 .about-section img {
