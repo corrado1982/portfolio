@@ -1,13 +1,25 @@
+@font-face {
+    font-family: "ShareTechMono-Regular";
+    src: url(font/ShareTechMono-Regular.ttf) format(truetype);
+}
 body {
     
     background-color: rgb(28 51 67);
     margin: 0;
 }
+p {
+    font-family: "ShareTechMono-Regular";
+}
+h1,h2,h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
 h1,
 h2, 
+h3,
 p, 
 li, 
-.card a {
+.card a,
+a {
     color: #B9F9FF;
 }
                  /* NAV */
@@ -35,28 +47,34 @@ ul {
 }
 .title-section {
     text-align: center;
-    margin-top: 100px;
+    font-size: 2em;
+    margin: 100px;
 }
                 /* INTRO */
 .intro {
-    width: 800px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     margin: auto;
 }
 h1 {
+    margin: 0;
     font-size: 4em;
 }
              /* ABOUT SECTION */
+.about-container {
+    display: flex;
+    justify-content: center;
+}
 .about-section img {
     border-radius: 250px;
     width: 500px;
-    display: block;
-    margin: 20px auto;
+    /* display: block;
+    margin: 20px auto; */
 }
 .about-description {
-    max-width: 500px;
-    margin: 5px auto;
+    /* max-width: 500px; */
+    margin: auto -40px;
     border-radius: 10px;
     border: 2px solid rgb(178, 178, 178);
     padding: 25px;
@@ -71,12 +89,12 @@ h1 {
 }
 .card img {
     width: 500px;
-    margin: 20px;
+    margin: 25px;
 }
 .card p {
     margin: 0;
 }
-.card h2 {
+.card h3 {
     align-self: flex-end;
     border-radius: 10px;
     border: 2px solid rgb(178, 178, 178);
@@ -90,19 +108,31 @@ h1 {
 .card {
     border-radius: 10px;
     max-width: 550px;
-    background-color: rgb(151, 152, 152);
+    background-color: #325b6b;
     display: flex;
     flex-direction: column;
-    margin: 150px
+    margin: 150px auto;
 }
 .p-and-github {
     border-radius: 10px;
     border: 2px solid rgb(178, 178, 178);
     /* margin-left: -30px; */
     margin-top: 280px;
-    max-width: 330px;
+    max-width: 430px;
     background-color: rgba(59, 59, 59, 0.89);
     position: absolute;
     z-index: 1;
     padding: 25px;
 }
+                                            /* CONTACT  */
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+.contacts a i {
+    margin: 20px;
+}     
+.email-add {
+    text-align: center;
+    margin-bottom: 100px;
+}                                     
