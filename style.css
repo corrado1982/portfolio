@@ -83,10 +83,10 @@ h1 {
 
 
              /* WORKS SECTION */
-.card-row {
+/* .card-row {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 .card img {
     width: 500px;
     margin: 25px;
@@ -103,7 +103,6 @@ h1 {
     z-index: 1;
     position: absolute;
     margin-top: -40px;
-    /* margin-left: 450px; */
 }
 .card {
     border-radius: 10px;
@@ -116,7 +115,6 @@ h1 {
 .p-and-github {
     border-radius: 10px;
     border: 2px solid rgb(178, 178, 178);
-    /* margin-left: -30px; */
     margin-top: 280px;
     max-width: 430px;
     background-color: rgba(59, 59, 59, 0.89);
