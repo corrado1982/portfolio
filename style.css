@@ -38,7 +38,7 @@ h3 {
     margin-left: 5px;
     width: 70px;
 }
-nav {
+header {
     display: flex;
     justify-content: space-between;
     z-index: 2;
@@ -143,8 +143,56 @@ ul {
     text-align: center;
     margin-bottom: 100px;
 } 
-
+@media (min-width: 701px) {
+    #hamburger-menu,
+    .fa-solid,
+    .fa-bars:before {
+        display: none;
+    }
+}
 @media (max-width: 700px) {
+                     /* HAMBURGER MENU */
+                     nav {
+                        position: fixed;
+                        top: 155px;
+                        left: 0px;
+                        display: none;
+                        text-align: center;
+                      }
+    
+    #hamburger-menu {
+        display: none;
+    }
+    .list-hamburger {
+        /* display: block; */
+        padding: 20px 0;
+        background-color: #325b6b;
+        position: fixed;
+        margin-top: -66px;
+        width: 100%;
+        /* margin-top: 0px;
+        height: 230px;
+        width: 204px;
+        display: block;
+        background-color: white;
+        padding-left: 0px;
+        min-width: 204px; */
+      }
+      .label-h-m {
+        margin-block: auto;
+      }
+      #hamburger-menu {
+        display: none;
+      }
+
+    #hamburger-menu:checked ~ nav {
+        
+        display: block;
+    }
+    .fa-solid {
+        font-size: 70px;
+        color: #B9F9FF;
+    }
     h2 {
         font-size: 1.5em;
     }
