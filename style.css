@@ -2,19 +2,18 @@
     font-family: "ShareTechMono-Regular";
     src: url(font/ShareTechMono-Regular.ttf) format(truetype);
 }
-body {
-    
-    background-color: rgb(28 51 67);
-    margin: 0;
-}
 p {
     font-family: "ShareTechMono-Regular";
 }
 h1,h2,h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
-h1,
-h2, 
+body {
+    
+    background-color: rgb(28 51 67);
+    margin: 0;
+}
+h1, 
 h3,
 p, 
 li, 
@@ -22,13 +21,24 @@ li,
 a {
     color: #B9F9FF;
 }
-                 /* NAV */
+
+h2 {
+    font-size: 2.5em;
+    color: #B9F9FF;
+}
+h1 {
+    margin: 0;
+    font-size: 4em;
+}
+h3 {
+    font-size: 1.5em;
+}
+                             /* NAV */
 #logo {
     margin-left: 5px;
     width: 70px;
 }
 nav {
-    /* logo-color B9F9FF */
     display: flex;
     justify-content: space-between;
     z-index: 2;
@@ -47,34 +57,28 @@ ul {
 }
 .title-section {
     text-align: center;
-    font-size: 2em;
     margin: 100px;
 }
-                /* INTRO */
+                            /* INTRO */
 .intro {
     width: 700px;
     display: flex;
     flex-direction: column;
     margin: auto;
 }
-h1 {
-    margin: 0;
-    font-size: 4em;
-}
-             /* ABOUT SECTION */
+
+                         /* ABOUT SECTION */
 .about-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .about-section img {
     border-radius: 250px;
     width: 500px;
-    /* display: block;
-    margin: 20px auto; */
 }
 .about-description {
-    /* max-width: 500px; */
-    margin: auto -40px;
+    margin: auto 0px;
     border-radius: 10px;
     border: 2px solid rgb(178, 178, 178);
     padding: 25px;
@@ -82,20 +86,29 @@ h1 {
 }
 
 
-             /* WORKS SECTION */
-/* .card-row {
+                         /* WORKS SECTION */
+
+.img-container {
+    border-radius: 10px;
+    width: 550px;
+    background-color: #325b6b;
+}
+.card {
+    width: auto;
     display: flex;
+    margin: 100px 0% 100px 0%;
+    justify-content: center;
     flex-wrap: wrap;
-} */
+}
+.card-2 {
+    flex-direction: row-reverse;
+}
 .card img {
     width: 500px;
     margin: 25px;
 }
-.card p {
-    margin: 0;
-}
 .card h3 {
-    align-self: flex-end;
+    
     border-radius: 10px;
     border: 2px solid rgb(178, 178, 178);
     padding: 25px;
@@ -104,22 +117,18 @@ h1 {
     position: absolute;
     margin-top: -40px;
 }
-.card {
-    border-radius: 10px;
-    max-width: 550px;
-    background-color: #325b6b;
-    display: flex;
-    flex-direction: column;
-    margin: 150px auto;
+.card p {
+    margin: 0;
 }
 .p-and-github {
+    margin: auto 0;
     border-radius: 10px;
     border: 2px solid rgb(178, 178, 178);
-    margin-top: 280px;
-    max-width: 430px;
+    
+    width: 430px;
     background-color: rgba(59, 59, 59, 0.89);
-    position: absolute;
-    z-index: 1;
+    
+    
     padding: 25px;
 }
                                             /* CONTACT  */
@@ -133,4 +142,40 @@ h1 {
 .email-add {
     text-align: center;
     margin-bottom: 100px;
-}                                     
+} 
+
+@media (max-width: 700px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    .intro {
+        width: 350px;
+    }
+    .intro p,
+    h1 {
+        width: 350px;
+        margin: 5px;
+    }
+    .p-header {
+        margin-top: 40px;
+    }
+    .about-section img {
+    width: 300px;
+    }
+    .img-container {
+        width: 350px;
+    }
+    .card img {
+        width: 300px;
+    }
+    .p-and-github {
+        width: 350px;
+    }
+
+}
