@@ -43,7 +43,7 @@ header {
     justify-content: space-between;
     z-index: 2;
     padding: 5px;
-    background-color: #325b6b;
+    background-color: #2E5261;
     top: 0;
     position: sticky;
 }
@@ -78,6 +78,7 @@ ul {
     width: 500px;
 }
 .about-description {
+    width: 360px;
     margin: auto 0px;
     border-radius: 10px;
     border: 2px solid rgb(178, 178, 178);
@@ -91,7 +92,7 @@ ul {
 .img-container {
     border-radius: 10px;
     width: 550px;
-    background-color: #325b6b;
+    background-color: #2E5261;
 }
 .card {
     width: auto;
@@ -228,7 +229,7 @@ ul {
     .img-container {
         width: 300px;
 
-        margin: auto;
+        /* margin: auto; */
     }
     .card img {
         width: 250px;
