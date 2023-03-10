@@ -57,7 +57,7 @@ ul {
 }
 .title-section {
     text-align: center;
-    margin: 100px;
+    margin: 100px auto;
 }
                             /* INTRO */
 .intro {
@@ -131,7 +131,7 @@ ul {
     
     padding: 25px;
 }
-                                            /* CONTACT  */
+                            /* CONTACT  */
 .contacts {
     display: flex;
     justify-content: center;
@@ -143,6 +143,7 @@ ul {
     text-align: center;
     margin-bottom: 100px;
 } 
+                        /* HAMBURGER MENU */
 @media (min-width: 701px) {
     #hamburger-menu,
     .fa-solid,
@@ -151,14 +152,14 @@ ul {
     }
 }
 @media (max-width: 700px) {
-                     /* HAMBURGER MENU */
-                     nav {
-                        position: fixed;
-                        top: 155px;
-                        left: 0px;
-                        display: none;
-                        text-align: center;
-                      }
+                     
+    nav {
+    position: fixed;
+    top: 155px;
+    left: 0px;
+    display: none;
+    text-align: center;
+    }
     
     #hamburger-menu {
         display: none;
@@ -195,6 +196,7 @@ ul {
     }
     h2 {
         font-size: 1.5em;
+        width: 250px;
     }
     h1 {
         font-size: 2em;
@@ -203,27 +205,34 @@ ul {
         font-size: 1em;
     }
     .intro {
-        width: 350px;
+        width: 300px;
     }
     .intro p,
     h1 {
-        width: 350px;
+        width: 250px;
         margin: 5px;
     }
     .p-header {
         margin-top: 40px;
     }
     .about-section img {
-    width: 300px;
+    width: 250px;
+    }
+    .about-description {
+        width: 250px;
     }
     .img-container {
-        width: 350px;
-    }
-    .card img {
         width: 300px;
     }
+    .card img {
+        width: 250px;
+    }
     .p-and-github {
-        width: 350px;
+        width: 250px;
+    }
+    .email-add {
+        width: 250px;
+        margin: 50px auto 100px;
     }
 
 }
